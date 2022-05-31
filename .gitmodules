@@ -1,0 +1,6 @@
+[submodule "quick.nvim"]
+	path = quick.nvim
+	url = git@github.com:albingroen/quick.nvim.git
+[submodule "NvChad"]
+	path = NvChad
+	url = git@github.com:NvChad/NvChad.git
