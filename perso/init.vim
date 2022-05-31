@@ -20,6 +20,19 @@
                                         "Y8b d88P 
                                           "Y88P"  
 
-source $HOME/.config/nvim/pluggins/pluggins.vim
-source $HOME/.config/nvim/general/general.vim
-source $HOME/.config/nvim/keybindings/keybindings.vim
+source $HOME/.config/nvim/pluggins.vim
+source $HOME/.config/nvim/general.vim
+source $HOME/.config/nvim/keybindings.vim
+
+" lua require("my_conf")
+lua require("tool")
+lua << EOF
+require('telescope').setup{
+	defaults = {
+		prompt_prefix = " :: "
+	}
+}
+require('telescope').load_extension('coc')
+require('telescope').load_extension('file_browser')
+require('telescope').load_extension('fzf')
+EOF

@@ -13,7 +13,7 @@
 "  `---`        `----'                  `----'              `--`---'               
 
 set encoding=UTF-8
-set guifont=DroidSansMono\ Nerd\ Font\ 11
+" set guifont=DroidSansMono\ Nerd\ Font\ 11
 let g:airline_powerline_fonts = 1
 
 set number

@@ -20,18 +20,27 @@ Plug 'https://github.com/ryanoasis/vim-devicons' " Developer Icons
 " Plug 'https://github.com/tc50cal/vim-terminal' " Vim Terminal
 " Plug 'https://github.com/preservim/tagbar' " Tagbar for code navigation
 " Plug 'https://github.com/terryma/vim-multiple-cursors' " CTRL + N for multiple cursors
-Plug 'mhinz/vim-startify' 
+" Plug 'mhinz/vim-startify' 
 Plug 'vimwiki/vimwiki'
 Plug 'https://github.com/junegunn/limelight.vim'
-Plug 'https://github.com/junegunn/goyo.vim'
+" Plug 'https://github.com/junegunn/goyo.vim'
 Plug 'https://github.com/mattn/calendar-vim'
 Plug 'https://github.com/jiangmiao/auto-pairs'
-Plug 'kwsp/halcyon-neovim'
+" Plug 'kwsp/halcyon-neovim'
 
+Plug 'nvim-lua/popup.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'nvim-telescope/telescope-file-browser.nvim'
+Plug 'fannheyward/telescope-coc.nvim'
 call plug#end()
 
 " airline settings
-let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
+" let g:airline#extensions#tabline#enabled = 1 " Enable the list of buffers
 let g:airline#extensions#tabline#formatter = 'unique_tail' " file-name.js
 
 if !exists('g:airline_symbols')
@@ -67,7 +76,8 @@ let g:limelight_conceal_ctermfg = 240
 " use template file to generate diary page
 au BufNewFile ~/vimwiki/diary/*.md :silent 0r !~/.config/nvim/templates/generate-vimwiki-diary-template '%'
 
-
 set nocompatible
 filetype plugin on
 syntax on
+
+let NERDTreeShowHidden=1
