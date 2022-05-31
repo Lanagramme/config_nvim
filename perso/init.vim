@@ -20,9 +20,9 @@
                                         "Y8b d88P 
                                           "Y88P"  
 
-source $HOME/.shfiles/nvim/perso/pluggins.vim
-source $HOME/.shfiles/nvim/perso/general.vim
-source $HOME/.shfiles/nvim/perso/keybindings.vim
+source $HOME/.dotfiles/nvim/perso/pluggins.vim
+source $HOME/.dotfiles/nvim/perso/general.vim
+source $HOME/.dotfiles/nvim/perso/keybindings.vim
 
 lua << EOF
 require('telescope').setup{
